@@ -1,8 +1,6 @@
-let mySprite: Sprite = null
-let mySprite2: Sprite = null
-let Bobby_Front: Sprite = null
+let Bobby: Sprite = null
 controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
-    mySprite = sprites.create(img`
+    Bobby = sprites.create(img`
         . . . . . . f f f f . . . . . . 
         . . . . f f e e e e f f . . . . 
         . . . f e e e f f e e e f . . . 
@@ -22,7 +20,7 @@ controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
         `, SpriteKind.Player)
 })
 controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
-    mySprite2 = sprites.create(img`
+    Bobby = sprites.create(img`
         ..............ffffff....
         .............f2feeeeff..
         ............f222feeeeff.
@@ -50,7 +48,7 @@ controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
         `, SpriteKind.Player)
 })
 controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
-    mySprite = sprites.create(img`
+    Bobby = sprites.create(img`
         ........................
         ....ffffff..............
         ..ffeeeef2f.............
@@ -78,7 +76,7 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
         `, SpriteKind.Player)
 })
 controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
-    Bobby_Front = sprites.create(img`
+    Bobby = sprites.create(img`
         ........................
         ......ffff..............
         ....fff22fff............
