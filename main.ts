@@ -1,9 +1,8 @@
-let Bobby_Back: Sprite = null
-let mySprite2: Sprite = null
 let mySprite: Sprite = null
+let mySprite2: Sprite = null
 let Bobby_Front: Sprite = null
 controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
-    Bobby_Back = sprites.create(img`
+    mySprite = sprites.create(img`
         . . . . . . f f f f . . . . . . 
         . . . . f f e e e e f f . . . . 
         . . . f e e e f f e e e f . . . 
